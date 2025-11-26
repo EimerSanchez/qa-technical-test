@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": ["data", "support", "_meta"],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": ["id", "email", "first_name", "last_name", "avatar"],
+      "properties": {
+        "id": { "type": "integer" },
+        "email": { "type": "string", "format": "email" },
+        "first_name": { "type": "string" },
+        "last_name": { "type": "string" },
+        "avatar": { "type": "string", "format": "url" }
+      },
+      "additionalProperties": false
+    },
+    "support": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "text": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "_meta": {
+      "type": "object",
+      "required": ["powered_by", "upgrade_url", "docs_url", "template_gallery", "message", "features", "upgrade_cta"],
+      "properties": {
+        "powered_by": { "type": "string" },
+        "upgrade_url": { "type": "string", "format": "url" },
+        "docs_url": { "type": "string", "format": "url" },
+        "template_gallery": { "type": "string", "format": "url" },
+        "message": { "type": "string" },
+        "features": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "upgrade_cta": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

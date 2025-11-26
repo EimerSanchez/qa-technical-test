@@ -1,0 +1,2 @@
+default: --require features/support --format pretty --color
+html_report: --require features/support --format html --out ../reports/api.html

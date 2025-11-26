@@ -1,0 +1,5 @@
+default: --format pretty --color
+json: --format json --out results.json
+html: --format html --out results.html
+verbose: --format pretty --color --backtrace
+html_report: --format html --out ../reports/frontend.html

@@ -1,0 +1,11 @@
+/vendor/bundle
+/.bundle
+
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
+
+/api.html
+/frontend.html
