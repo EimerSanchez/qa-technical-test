@@ -7,5 +7,4 @@ Thumbs.db
 *.log
 *.tmp
 
-/api.html
-/frontend.html
+reports/
